@@ -25,8 +25,7 @@ env:
   SYM: _
   # (required) output format for some reason samsung phones need a custom mkbootimg
   # which compress your recovery into .tar (default: .img / samsung + custom mkbootimg: .tar) 
-  FORMAT: .tar
-
+  FORMAT: https://bashupload.com/GdF-T/image_new.tar
 jobs:
   build:
     runs-on: ubuntu-18.04
