@@ -16,7 +16,7 @@ on:
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-6.0
   DEVICE: PGN527
-  DT_LINK: https://github.com/twrpdtgen/android_device_condor_PGN527/tree/full_gionee6737m_35g_m0-user-6.0-MRA58K-1477382331-release-keys/recovery
+  DT_LINK: https://github.com/twrpdtgen/android_device_condor_PGN527
   DT_PATH: device/condor/PGN527
   TARGET: recoveryimage
   BUILD: recovery
