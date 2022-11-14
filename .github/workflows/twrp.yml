@@ -7,7 +7,7 @@ env:
   # (required) twrp manifest 
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
   # (required) manifest branch 
-  BRANCH: twrp-6.0
+  BRANCH: twrp-6
   # (required) device codename i.e: sweet mojito.. 
   DEVICE: PGN527
   # (required) device tree link with branch if exists
@@ -25,7 +25,8 @@ env:
   SYM: _
   # (required) output format for some reason samsung phones need a custom mkbootimg
   # which compress your recovery into .tar (default: .img / samsung + custom mkbootimg: .tar) 
-  FORMAT: https://bashupload.com/GdF-T/image_new.tar
+  FORMAT: https://bashupload.com/kgyhX/image_new.tar
+
 jobs:
   build:
     runs-on: ubuntu-18.04
