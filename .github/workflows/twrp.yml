@@ -7,7 +7,7 @@ env:
   # (required) twrp manifest 
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
   # (required) manifest branch 
-  BRANCH: twrp-6
+  BRANCH: omni -b twrp-6.0
   # (required) device codename i.e: sweet mojito.. 
   DEVICE: PGN527
   # (required) device tree link with branch if exists
