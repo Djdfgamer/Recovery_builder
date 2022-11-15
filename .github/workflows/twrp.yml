@@ -5,13 +5,13 @@ on:
 
 env:
   # (required) twrp manifest 
-  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-6.0
+  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
   # (required) manifest branch 
-  BRANCH: omni
+  BRANCH: -b twrp-6.0
   # (required) device codename i.e: sweet mojito.. 
   DEVICE: PGN527
   # (required) device tree link with branch if exists
-  DT_LINK: https://github.com/twrpdtgen/android_device_condor_PGN527/tree/full_gionee6737m_35g_m0-user-6.0-MRA58K-1477382331-release-keys
+  DT_LINK: https://github.com/twrpdtgen/android_device_condor_PGN527
   # (required) who made your phone ? 
   MANUFACTURER: condor
   # (required) recovery partiton = recovery, else (no recovery partition): boot 
@@ -25,8 +25,7 @@ env:
   SYM: _
   # (required) output format for some reason samsung phones need a custom mkbootimg
   # which compress your recovery into .tar (default: .img / samsung + custom mkbootimg: .tar) 
-  FORMAT: https://bashupload.com/kgyhX/image_new.tar
-
+  FORMAT: .rar
 jobs:
   build:
     runs-on: ubuntu-18.04
