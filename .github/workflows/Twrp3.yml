@@ -59,8 +59,8 @@ jobs:
               . build/envsetup.sh && lunch $OT$SYM$DEVICE-eng && export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET$IMAGE -j60
               zip twrp.zip /home/runner/work/Recovery_builder/Recovery_builder/work/out/target/product/$DEVICE/$TARGET$FORMAT
        - name: Save in artifact
-         uses: actions/upload-artifact@v3
-         with:
+            artifacts:
+            when: always
             name: recovery.zip
             path: /home/runner/work/Recovery_builder/Recovery_builder/work/twrp.zip
             retention-days: 5
