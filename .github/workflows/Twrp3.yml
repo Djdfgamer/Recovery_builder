@@ -1,4 +1,4 @@
-- name: Building Twrp 2
+name: Building Twrp 2
 
 on:
   workflow_dispatch:
