@@ -61,6 +61,6 @@ jobs:
        - name: Save in artifact
          uses: actions/upload-artifact@v3
          with:
-            name: recovery.zip
+            name: recovery.tar
             path: /home/runner/work/Recovery_builder/Recovery_builder/work/twrp.zip
             retention-days: 5
