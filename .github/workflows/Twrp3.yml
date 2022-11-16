@@ -25,7 +25,7 @@ env:
   SYM: _
   # (required) output format for some reason samsung phones need a custom mkbootimg
   # which compress your recovery into .tar (default: .img / samsung + custom mkbootimg: .tar) 
-  FORMAT: .tar
+  FORMAT: .img
 
 jobs:
   build:
@@ -57,7 +57,7 @@ jobs:
          run: |
               cd work
               . build/envsetup.sh && lunch $OT$SYM$DEVICE-eng && export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET$IMAGE -j60
-              zip twrp.tar /home/runner/work/Recovery_builder/Recovery_builder/work/out/target/product/$DEVICE/$TARGET$FORMAT
+              zip twrp.zip /home/runner/work/Recovery_builder/Recovery_builder/work/out/target/product/$DEVICE/$TARGET$FORMAT
        - name: Save in artifact
          uses: actions/upload-artifact@v3
          with:
